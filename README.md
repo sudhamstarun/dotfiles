@@ -1,6 +1,6 @@
 # Dotfiles
 
-LazyVim (Neovim) and Tmux configuration with GitHub Dark theme.
+LazyVim (Neovim) and Tmux configuration with Tokyonight Moon theme.
 
 ## Installation
 
@@ -35,7 +35,7 @@ LazyVim is a Neovim setup with batteries included.
 
 ### Features
 
-- **Theme**: GitHub Dark
+- **Theme**: Tokyonight Moon
 - **LSP**: Auto-completion, diagnostics, formatting
 - **Git**: Integration with signs and blame
 - **Line numbers**: Relative + absolute
