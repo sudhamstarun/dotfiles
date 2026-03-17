@@ -41,6 +41,11 @@ LazyVim is a Neovim setup with batteries included.
 - **Line numbers**: Relative + absolute
 - **Tab width**: 2 spaces
 - **Plugin Manager**: Lazy.nvim
+- **Hidden files**: Shown by default in nvim-tree
+
+## Terminal
+
+- **ls command**: Shows hidden files by default (`ls -la` alias)
 
 ## Tmux
 

@@ -17,8 +17,14 @@ if [ -f "$HOME/.tmux.conf" ]; then
   mv "$HOME/.tmux.conf" "$BACKUP_DIR/"
 fi
 
+if [ -f "$HOME/.zshrc" ]; then
+  echo "Backing up existing .zshrc..."
+  mv "$HOME/.zshrc" "$BACKUP_DIR/"
+fi
+
 ln -s "$DOTFILES_DIR/.config/nvim" "$HOME/.config/nvim"
 ln -s "$DOTFILES_DIR/.tmux.conf" "$HOME/.tmux.conf"
+ln -s "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 
 echo "Dotfiles installed successfully!"
 echo "Backups saved to: $BACKUP_DIR"
