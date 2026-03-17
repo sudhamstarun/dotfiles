@@ -1,6 +1,6 @@
 # Dotfiles
 
-Neovim and Tmux configuration with GitHub Dark theme.
+LazyVim (Neovim) and Tmux configuration with GitHub Dark theme.
 
 ## Installation
 
@@ -14,39 +14,48 @@ Neovim and Tmux configuration with GitHub Dark theme.
    ./install.sh
    ```
 
-3. Install Neovim plugins (will auto-install on first launch):
+3. Start Neovim (plugins will auto-install on first launch):
    ```bash
    nvim
    ```
 
-## Neovim
+## Neovim (LazyVim)
+
+LazyVim is a Neovim setup with batteries included.
 
 ### Keybindings
 
 - `Ctrl-n`: Toggle file tree
 - `:NvimTreeFocus`: Focus file tree
+- `gd`: Go to definition
+- `K`: Hover documentation
+- `gr`: References
+- `Ctrl-f`: Fuzzy search files
+- `Ctrl-b`: Fuzzy search buffers
 
-### Configuration
+### Features
 
 - **Theme**: GitHub Dark
-- **Line numbers**: Enabled (relative + absolute)
+- **LSP**: Auto-completion, diagnostics, formatting
+- **Git**: Integration with signs and blame
+- **Line numbers**: Relative + absolute
 - **Tab width**: 2 spaces
-- **Plugins**: Lazy.nvim, nvim-tree, gitsigns
+- **Plugin Manager**: Lazy.nvim
 
 ## Tmux
 
 ### Keybindings
 
-- `Ctrl-a`: Prefix key
-- `Ctrl-a c`: Create new window
-- `Ctrl-a n/p`: Next/previous window
-- `Ctrl-a 1-9`: Switch to window by number
-- `Ctrl-a v`: Split pane horizontally
-- `Ctrl-a s`: Split pane vertically
-- `Ctrl-a h/j/k/l`: Move between panes (vim-style)
-- `Ctrl-a H/J/K/L`: Resize panes
-- `Ctrl-a S`: Choose session
-- `Ctrl-a N`: Create new session
+- `` ` ``: Prefix key (backtick)
+- `` `c``: Create new window
+- `` `n/p``: Next/previous window
+- `` `1-9``: Switch to window by number
+- `` `v``: Split pane horizontally
+- `` `s``: Split pane vertically
+- `` `h/j/k/l``: Move between panes (vim-style)
+- `` `H/J/K/L``: Resize panes
+- `` `S``: Choose session
+- `` `N``: Create new session
 
 ## Requirements
 
