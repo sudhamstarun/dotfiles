@@ -49,6 +49,12 @@ LazyVim is a Neovim setup with batteries included.
 
 ## Tmux
 
+### Configuration
+
+- **Theme**: Tokyonight Moon (matches Neovim)
+- **Colors**: Dark background with purple/blue accents
+- **Status bar**: Time, date, session name
+
 ### Keybindings
 
 - `` ` ``: Prefix key (backtick)
