@@ -20,7 +20,7 @@ require("lazy").setup({
     lazy = false,
     version = false,
   },
-  install = { colorscheme = { "github_dark" } },
+  install = { colorscheme = { "tokyonight-moon" } },
   checker = { enabled = true },
   performance = {
     rtp = {
