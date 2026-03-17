@@ -22,9 +22,15 @@ if [ -f "$HOME/.zshrc" ]; then
   mv "$HOME/.zshrc" "$BACKUP_DIR/"
 fi
 
+if [ -d "$HOME/.config/kitty" ]; then
+  echo "Backing up existing kitty config..."
+  mv "$HOME/.config/kitty" "$BACKUP_DIR/"
+fi
+
 ln -s "$DOTFILES_DIR/.config/nvim" "$HOME/.config/nvim"
 ln -s "$DOTFILES_DIR/.tmux.conf" "$HOME/.tmux.conf"
 ln -s "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
+ln -s "$DOTFILES_DIR/.config/kitty" "$HOME/.config/kitty"
 
 echo "Dotfiles installed successfully!"
 echo "Backups saved to: $BACKUP_DIR"

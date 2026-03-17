@@ -1,6 +1,6 @@
 # Dotfiles
 
-LazyVim (Neovim) and Tmux configuration with Tokyonight Moon theme.
+LazyVim (Neovim), Tmux, and Kitty terminal configuration with Tokyonight Moon theme.
 
 ## Installation
 
@@ -43,7 +43,23 @@ LazyVim is a Neovim setup with batteries included.
 - **Plugin Manager**: Lazy.nvim
 - **Hidden files**: Shown by default in nvim-tree
 
-## Terminal
+## Terminal (Kitty)
+
+### Configuration
+
+- **Theme**: Tokyonight Moon (matches Neovim and Tmux)
+- **Font**: JetBrains Mono Nerd Font (13pt)
+- **Colors**: Complete Tokyonight Moon color palette
+- **Features**: Powerline tab bar, window padding
+
+### Requirements
+
+Install Kitty terminal emulator:
+```bash
+brew install --cask kitty
+```
+
+## Terminal (Shell)
 
 - **ls command**: Shows hidden files by default (`ls -la` alias)
 
@@ -72,12 +88,13 @@ LazyVim is a Neovim setup with batteries included.
 
 - Neovim 0.11+
 - Tmux 3.6+
+- Kitty terminal
 - Homebrew (for installation)
 
 ## Installation of Dependencies
 
 ```bash
-brew install nvim tmux gh
+brew install nvim tmux gh kitty
 ```
 
 ## GitHub Setup
