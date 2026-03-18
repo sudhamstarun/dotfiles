@@ -8,8 +8,8 @@ done
 # Split vertically to create right pane (30% width)
 tmux split-window -h -p 30 -c "#{pane_current_path}"
 
-# Split the right pane horizontally (70% opencode, 30% terminal)
-tmux split-window -v -p 70 -c "#{pane_current_path}"
+# Split the right pane horizontally (70% opencode top, 30% terminal bottom)
+tmux split-window -v -p 30 -c "#{pane_current_path}"
 
 # Launch nvim in left pane (pane 0)
 tmux send-keys -t 0 "nvim" C-m
