@@ -5,17 +5,19 @@ while [ $(tmux display-message -p '#{window_panes}') -gt 1 ]; do
     tmux kill-pane -t 1
 done
 
-# Split vertically to create right pane (30% width)
+# Pane 1 is the original left pane (will be nvim)
+
+# Split pane 1 vertically to create right pane (30% width), new pane becomes pane 2
 tmux split-window -h -p 30 -c "#{pane_current_path}"
 
-# Split the right pane (pane 1) horizontally for opencode and terminal
-tmux split-window -v -p 30 -t 1 -c "#{pane_current_path}"
+# Split pane 2 (right side) horizontally for opencode (top) and terminal (bottom)
+tmux split-window -v -p 30 -t 2 -c "#{pane_current_path}"
 
-# Launch nvim in left pane (pane 0)
-tmux send-keys -t 0 "nvim" C-m
+# Launch nvim in left pane (pane 1)
+tmux send-keys -t 1 "nvim" C-m
 
-# Launch opencode in top right pane (pane 1)
-tmux send-keys -t 1 "opencode" C-m
+# Launch opencode in top right pane (pane 2)
+tmux send-keys -t 2 "opencode" C-m
 
 # Select left pane (for nvim)
-tmux select-pane -t 0
+tmux select-pane -t 1
