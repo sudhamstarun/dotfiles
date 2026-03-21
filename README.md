@@ -1,6 +1,14 @@
 # Dotfiles
 
-LazyVim (Neovim), Tmux, and Kitty terminal configuration with Tokyonight Moon theme.
+Personal development environment configuration with Neovim (LazyVim), Tmux, Kitty terminal, and Zsh shell. All tools themed with Tokyonight Moon for a consistent aesthetic.
+
+## Components
+
+- **Neovim**: LazyVim-based setup with Codeium AI completion
+- **Terminal**: Kitty with Tokyonight Moon theme
+- **Tmux**: Terminal multiplexer with custom dev layouts
+- **Shell**: Zsh with Powerlevel10k prompt
+- **Languages**: Python (pyenv/conda), JavaScript (Bun)
 
 ## Installation
 
@@ -21,27 +29,36 @@ LazyVim (Neovim), Tmux, and Kitty terminal configuration with Tokyonight Moon th
 
 ## Neovim (LazyVim)
 
-LazyVim is a Neovim setup with batteries included.
+LazyVim-based Neovim configuration with enhanced productivity features.
 
 ### Keybindings
 
-- `Ctrl-n`: Toggle file tree
-- `:NvimTreeFocus`: Focus file tree
+**Navigation:**
+- `Ctrl-h/j/k/l`: Focus left/down/up/right window
+- `Ctrl-Up/Down/Left/Right`: Resize window
+
+**Editing:**
+- `Esc`: Clear search highlights
+- `Esc Esc`: Exit terminal mode
+
+**LazyVim defaults:**
 - `gd`: Go to definition
 - `K`: Hover documentation
 - `gr`: References
-- `Ctrl-f`: Fuzzy search files
-- `Ctrl-b`: Fuzzy search buffers
+- `Ctrl-f`: Fuzzy search files (Telescope)
+- `Ctrl-b`: Fuzzy search buffers (Telescope)
 
 ### Features
 
 - **Theme**: Tokyonight Moon
 - **LSP**: Auto-completion, diagnostics, formatting
+- **AI**: Codeium AI-powered code completion
 - **Git**: Integration with signs and blame
-- **Line numbers**: Relative + absolute
-- **Tab width**: 2 spaces
+- **File Explorer**: nvim-tree (shows hidden files by default)
 - **Plugin Manager**: Lazy.nvim
-- **Hidden files**: Shown by default in nvim-tree
+- **Tab width**: 2 spaces
+- **Line numbers**: Relative + absolute
+- **Auto-format**: Strip trailing whitespace on save
 
 ## Terminal (Kitty)
 
@@ -50,7 +67,7 @@ LazyVim is a Neovim setup with batteries included.
 - **Theme**: Tokyonight Moon (matches Neovim and Tmux)
 - **Font**: JetBrains Mono Nerd Font (13pt)
 - **Colors**: Complete Tokyonight Moon color palette
-- **Features**: Powerline tab bar, window padding
+- **Features**: Powerline tab bar, window padding, 10000 line scrollback
 
 ### Requirements
 
@@ -59,9 +76,21 @@ Install Kitty terminal emulator:
 brew install --cask kitty
 ```
 
-## Terminal (Shell)
+## Shell (Zsh)
 
-- **ls command**: Shows hidden files by default (`ls -la` alias)
+### Features
+
+- **Prompt**: Powerlevel10k (highly customizable instant prompt)
+- **Python**: pyenv for version management, Anaconda for environments
+- **JavaScript**: Bun for fast JavaScript runtime and package manager
+- **Aliases**: `ls` shows hidden files by default (`ls -la`)
+- **Tools**: opencode CLI integration
+
+### Requirements
+
+```bash
+brew install pyenv
+```
 
 ## Tmux
 
@@ -70,6 +99,7 @@ brew install --cask kitty
 - **Theme**: Tokyonight Moon (matches Neovim)
 - **Colors**: Dark background with purple/blue accents
 - **Status bar**: Time, date, session name
+- **Custom Layout**: Development workspace (`` `D `` keybinding)
 
 ### Keybindings
 
@@ -83,6 +113,14 @@ brew install --cask kitty
 - `` `H/J/K/L``: Resize panes
 - `` `S``: Choose session
 - `` `N``: Create new session
+- `` `D``: Open dev layout (nvim left, opencode top-right, terminal bottom-right)
+
+### Dev Layout
+
+The custom dev layout (` `D`) creates a 70/30 split:
+- **Left (70%)**: Neovim for editing
+- **Right top (30%)**: opencode for AI assistance
+- **Right bottom**: Terminal for commands
 
 ## Requirements
 
@@ -90,6 +128,7 @@ brew install --cask kitty
 - Tmux 3.6+
 - Kitty terminal
 - Homebrew (for installation)
+- JetBrains Mono Nerd Font
 
 ## Installation of Dependencies
 
