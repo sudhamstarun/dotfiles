@@ -1,10 +1,11 @@
 return {
   {
-    "folke/tokyonight.nvim",
+    "catppuccin/nvim",
+    name = "catppuccin",
     lazy = false,
     priority = 1000,
     opts = {
-      style = "moon",
+      flavour = "mocha",
       transparent = false,
       styles = {
         comments = { italic = true },
@@ -19,7 +20,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-moon",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }

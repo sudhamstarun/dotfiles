@@ -1,31 +1,20 @@
 # Dotfiles
 
-Personal development environment configuration with Neovim (LazyVim), Tmux, Kitty terminal, and Zsh shell. All tools themed with Tokyonight Moon for a consistent aesthetic.
+Personal development environment configuration with Neovim (LazyVim), Tmux, Kitty terminal, and Zsh shell. All tools themed with Catppuccin Mocha for a consistent aesthetic.
+
+## Installation
+
+```bash
+stow .
+```
 
 ## Components
 
 - **Neovim**: LazyVim-based setup with Codeium AI completion
-- **Terminal**: Kitty with Tokyonight Moon theme
+- **Terminal**: Kitty with Catppuccin Mocha theme
 - **Tmux**: Terminal multiplexer with custom dev layouts
 - **Shell**: Zsh with Powerlevel10k prompt
 - **Languages**: Python (pyenv/conda), JavaScript (Bun)
-
-## Installation
-
-1. Clone this repository:
-   ```bash
-   cd Developer/dotfiles
-   ```
-
-2. Run the install script:
-   ```bash
-   ./install.sh
-   ```
-
-3. Start Neovim (plugins will auto-install on first launch):
-   ```bash
-   nvim
-   ```
 
 ## Neovim (LazyVim)
 
@@ -50,7 +39,7 @@ LazyVim-based Neovim configuration with enhanced productivity features.
 
 ### Features
 
-- **Theme**: Tokyonight Moon
+- **Theme**: Catppuccin Mocha
 - **LSP**: Auto-completion, diagnostics, formatting
 - **AI**: Codeium AI-powered code completion
 - **Git**: Integration with signs and blame
@@ -64,9 +53,9 @@ LazyVim-based Neovim configuration with enhanced productivity features.
 
 ### Configuration
 
-- **Theme**: Tokyonight Moon (matches Neovim and Tmux)
+- **Theme**: Catppuccin Mocha (matches Neovim and Tmux)
 - **Font**: JetBrains Mono Nerd Font (13pt)
-- **Colors**: Complete Tokyonight Moon color palette
+- **Colors**: Complete Catppuccin Mocha color palette
 - **Features**: Powerline tab bar, window padding, 10000 line scrollback
 
 ### Requirements
@@ -96,7 +85,7 @@ brew install pyenv
 
 ### Configuration
 
-- **Theme**: Tokyonight Moon (matches Neovim)
+- **Theme**: Catppuccin Mocha (matches Neovim)
 - **Colors**: Dark background with purple/blue accents
 - **Status bar**: Time, date, session name
 - **Custom Layout**: Development workspace (`` `D `` keybinding)
