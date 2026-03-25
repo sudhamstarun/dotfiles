@@ -34,8 +34,20 @@ LazyVim-based Neovim configuration with enhanced productivity features.
 - `gd`: Go to definition
 - `K`: Hover documentation
 - `gr`: References
-- `Ctrl-f`: Fuzzy search files (Telescope)
-- `Ctrl-b`: Fuzzy search buffers (Telescope)
+
+**Fuzzy Search (Telescope):**
+- `Ctrl-f`: Fuzzy find files
+- `Ctrl-g`: Live grep in files
+- `Ctrl-b`: Fuzzy search buffers
+- `Ctrl-r`: Fuzzy search recent files
+- `Leader + ;`: Command palette
+- `Leader + ss`: Search symbols in current file
+- `Leader + sw`: Search symbols in workspace
+- `Leader + fw`: Search current word
+- `Leader + gf`: Search git files
+- `Leader + gc`: Search git commits
+- `Leader + fh`: Search help tags
+- `Leader + d`: Search diagnostics
 
 ### Features
 
