@@ -23,6 +23,7 @@ opt.hlsearch = true
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
+opt.guifont = "JetBrains Mono:h16"
 
 vim.g.netrw_list_hide = ""
 vim.g.netrw_banner = 0
