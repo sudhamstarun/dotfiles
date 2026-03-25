@@ -52,6 +52,7 @@ LazyVim-based Neovim configuration with enhanced productivity features.
 ### Features
 
 - **Theme**: Catppuccin Mocha
+- **Font**: JetBrains Mono (16pt)
 - **LSP**: Auto-completion, diagnostics, formatting
 - **AI**: Codeium AI-powered code completion
 - **Git**: Integration with signs and blame
@@ -66,7 +67,7 @@ LazyVim-based Neovim configuration with enhanced productivity features.
 ### Configuration
 
 - **Theme**: Catppuccin Mocha (matches Neovim and Tmux)
-- **Font**: JetBrains Mono Nerd Font (13pt)
+- **Font**: JetBrains Mono (19pt)
 - **Colors**: Complete Catppuccin Mocha color palette
 - **Features**: Powerline tab bar, window padding, 10000 line scrollback
 
@@ -129,7 +130,7 @@ The custom dev layout (` `D`) creates a 70/30 split:
 - Tmux 3.6+
 - Kitty terminal
 - Homebrew (for installation)
-- JetBrains Mono Nerd Font
+- JetBrains Mono font
 
 ## Installation of Dependencies
 
