@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-stow .
+stow -t ~/.config nvim kitty starship tmux
+stow -t ~ zshrc
