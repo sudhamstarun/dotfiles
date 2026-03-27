@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal development environment configuration with Neovim (LazyVim), Tmux, Kitty terminal, and Zsh shell. All tools themed with Catppuccin Mocha for a consistent aesthetic.
+Personal development environment configuration with Neovim, Tmux, Kitty terminal, and Zsh shell. All tools themed with Catppuccin Mocha for a consistent aesthetic.
 
 Inspired by [omerxx/dotfiles](https://github.com/omerxx/dotfiles).
 
@@ -19,70 +19,50 @@ This uses GNU Stow to create symlinks:
 
 ## Components
 
-- **Neovim**: LazyVim-based setup with Codeium AI completion
+- **Neovim**: Basic configuration with essential productivity features
 - **Terminal**: Kitty with Catppuccin Mocha theme
 - **Tmux**: Terminal multiplexer with custom dev layouts
 - **Shell**: Zsh with Starship prompt
 - **Languages**: Python (pyenv/conda), JavaScript (Bun)
 
-## Neovim (LazyVim)
+## Neovim
 
-LazyVim-based Neovim configuration with enhanced productivity features.
+Basic Neovim configuration with essential productivity features.
 
 ### Keybindings
 
+**File Operations:**
+- `Ctrl-s`: Save file
+- `<leader>q`: Quit
+
 **Navigation:**
 - `Ctrl-h/j/k/l`: Focus left/down/up/right window
-- `Ctrl-Up/Down/Left/Right`: Resize window
+- `Ctrl-d/u`: Half page down/up (centered)
 
 **Editing:**
-- `Esc`: Clear search highlights
-- `Esc Esc`: Exit terminal mode
+- `J`: Join lines (keep cursor centered)
+- `<leader>h`: Clear search highlights
 
-**LazyVim defaults:**
-- `gd`: Go to definition
-- `K`: Hover documentation
-- `gr`: References
-
-**Fuzzy Search (Telescope):**
-- `Ctrl-f`: Fuzzy find files
-- `Ctrl-g`: Live grep in files
-- `Ctrl-b`: Fuzzy search buffers
-- `Ctrl-r`: Fuzzy search recent files
-- `Leader + ;`: Command palette
-- `Leader + ss`: Search symbols in current file
-- `Leader + sw`: Search symbols in workspace
-- `Leader + fw`: Search current word
-- `Leader + gf`: Search git files
-- `Leader + gc`: Search git commits
-- `Leader + fh`: Search help tags
-- `Leader + d`: Search diagnostics
-
-**Completion (nvim-cmp):**
-- `Ctrl-n/p`: Select next/previous item
-- `Ctrl-b/f`: Scroll documentation
-- `Ctrl-Space`: Trigger completion
-- `Ctrl-e`: Abort
-- `Enter`: Confirm selection
-- `Tab/Shift-Tab`: Navigate snippets
+**Window Management:**
+- `<leader>sv`: Vertical split
+- `<leader>sh`: Horizontal split
 
 ### Features
 
-- **Theme**: Catppuccin Mocha
-- **Font**: JetBrains Mono (16pt)
-- **Completion**: nvim-cmp with Codeium AI, LSP, LuaSnip, buffer, and path sources
-- **Git**: LazyVim integration with signs and blame
-- **File Explorer**: nvim-tree
-- **Plugin Manager**: Lazy.nvim
-- **Tab width**: 2 spaces
 - **Line numbers**: Relative + absolute
-- **Search**: Telescope with fzf-native extension
+- **Indentation**: 4 spaces, auto-indent, smart-indent
+- **Search**: Case-sensitive with smartcase
+- **Cursor**: Highlight current line
+- **Colors**: True color support
+- **Undo**: Persistent undo files
+- **Yank**: Visual highlight on yank
+- **Whitespace**: Auto-remove trailing whitespace on save
 
 ## Terminal (Kitty)
 
 ### Configuration
 
-- **Theme**: Catppuccin Mocha (matches Neovim and Tmux)
+- **Theme**: Catppuccin Mocha (matches Tmux)
 - **Font**: JetBrains Mono (19pt)
 - **Colors**: Complete Catppuccin Mocha color palette
 - **Features**: Powerline tab bar, window padding, 10000 line scrollback
@@ -120,7 +100,7 @@ brew install pyenv bun
 
 ### Configuration
 
-- **Theme**: Catppuccin Mocha (matches Neovim)
+- **Theme**: Catppuccin Mocha
 - **Prefix key**: `` ` `` (backtick)
 - **Status bar**: Session name (left), directory (right)
 - **Plugins** (via TPM):
