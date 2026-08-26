@@ -5,6 +5,7 @@
 *.backup
 *.bak
 *~
+nvim.backup.*/
 
 # Sensitive files
 .env
@@ -14,6 +15,3 @@
 *.tmp
 *.swp
 *.swo
-
-# Tmux plugins (installed via TPM)
-tmux/.tmux/plugins/

@@ -1,0 +1,12 @@
+onboarding = false
+[theme]
+name = "catppuccin"
+
+[keys]
+prefix = "ctrl+a"
+
+[[keys.command]]
+key = "prefix+D"
+type = "shell"
+command = "\"$HOME\"/.config/herdr/scripts/dev-layout.sh"
+description = "dev layout (helix + opencode)"

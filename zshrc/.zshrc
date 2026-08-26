@@ -1,6 +1,6 @@
 # Initialize Starship prompt
 eval "$(starship init zsh)"
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
+export STARSHIP_CONFIG=~/.config/starship.toml
 
 export PATH="/usr/local/Homebrew/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
@@ -37,6 +37,9 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH="/Users/tarunsudhams/.opencode/bin:$PATH"
+
+export EDITOR="hx"
+export VISUAL="hx"
 
 # Show hidden files by default in ls
 alias ls='ls -la'
